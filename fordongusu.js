@@ -33,5 +33,7 @@ for (var ogr of ogrenci) {
     console.log(ogr.ad);
 };
 
+//
+
 
 
