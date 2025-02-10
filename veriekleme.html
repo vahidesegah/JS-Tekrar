@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veri Ekleme Ve Dönüt Alma</title>
+</head>
+<body>
+    <h1>Listeye Veri Ekle</h1>
+
+
+    <input type="text" id="metin">
+    <button id="buton">Listeye Ekle</button>
+    <ul id="liste"></ul>
+
+
+
+    <script>
+        var butonEkle=document.getElementById("buton");
+        var listeEkle=document.getElementById("liste");
+
+        butonEkle.onclick=function() {
+            var eklenecekMetin=document.getElementById("metin").value;
+            listeEkle.innerHTML+="<li>"+eklenecekMetin+"<li>";
+            alert("Listeye Eklenen Bilgi: "+eklenecekMetin);
+        }
+    </script>
+</body>
+</html>
